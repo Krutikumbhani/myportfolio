@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
-const pages = ['/aboutpage', '/mywork', '/contactpage'];
+const pages = ['/', '/services', '/aboutpage', '/mywork', '/contactpage', '/skill'];
 
 export default function ScrollNavigator({ children }) {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function ScrollNavigator({ children }) {
       const delta = event.deltaY;
       const currentPath = window.location.pathname;
       const currentIndex = pages.indexOf(currentPath);
-      
+
       if (delta > 0 && currentIndex < pages.length - 1) {
         setTimeout(() => router.push(pages[currentIndex + 1]), 2000);
       } else if (delta < 0 && currentIndex > 0) {

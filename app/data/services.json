@@ -1,0 +1,26 @@
+[
+  {
+    "num": "01",
+    "title": "Web Development",
+    "description": "Building responsive and dynamic websites.",
+    "href": ""
+  },
+  {
+    "num": "02",
+    "title": "Web Design",
+    "description": "Creating stunning designs for websites.",
+    "href": ""
+  },
+  {
+    "num": "03",
+    "title": "Logo Design",
+    "description": "Crafting unique and memorable brand logos.",
+    "href": ""
+  },
+  {
+    "num": "04",
+    "title": "SEO",
+    "description": "Optimizing websites to rank on search engines.",
+    "href": ""
+  }
+]

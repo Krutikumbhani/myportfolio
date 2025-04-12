@@ -25,7 +25,7 @@ function HomePage({ id, title }, ref) {
           <div className='w-1/2 text-center'>
             <div>
               <div className="overflow-hidden relative h-[65px] pt-[10px] -mt-[10px] mb-[50px]">
-                <ul className="{styles.flip5}">
+                <ul className="flip5">
                   <li className="font-serif text-[#eee] text-[40px] font-medium px-[10px] h-[45px] mb-[45px] block">नमस्ते</li>
                   <li className="font-serif text-[#eee] text-[40px] font-medium px-[10px] h-[45px] mb-[45px] block">Hello...</li>
                   <li className="font-serif text-[#eee] text-[40px] font-medium px-[10px] h-[45px] mb-[45px] block">Bonjour...</li>
@@ -35,7 +35,7 @@ function HomePage({ id, title }, ref) {
               </div>
             </div>
             <div className='text-center flex flex-col gap-5'>
-              <h1 className="text-[#18c5c5] text-7xl">I am Kruti...</h1>
+              <h1 className="text-[#18c5c5] text-7xl">I am Kruti Kumbhani</h1>
               <span className="text-4xl text-[#9ca3af]">FULL stack Developer</span>
               <p className="text-[#9ca3af] ">
                 I Am Self Learned, Passionate Coder with over 1.5 years of
@@ -81,8 +81,8 @@ function HomePage({ id, title }, ref) {
           </div>
 
           <div className='w-1/2 photo'>
-            <div className='w-[350px] mx-auto rounded-full overflow-hidden shadow-[0_0_50px_#18c5c5] animate-squareToCircle'>
-              <img src="/image/002.jpg" alt="Kruti Kumbhani" />
+            <div className='w-[350px] mx-auto rounded-full overflow-hidden shadow-[0_0_50px_#18c5c5] square-to-circle'>
+              {/* <img src="/image/002.jpg" alt="Kruti Kumbhani" />  */}
             </div>
           </div>
         </div>

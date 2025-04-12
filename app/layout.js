@@ -1,3 +1,4 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollNavigator from '@/component/Scrollpage';
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="">
-        <ScrollNavigator>
           <NavBar />
+        <ScrollNavigator>
           {children}
         </ScrollNavigator>
       </body>

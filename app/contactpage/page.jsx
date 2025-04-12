@@ -4,84 +4,93 @@ import { useState } from 'react';
 export default function ContactPage() {
 	const [formData, setFormData] = useState({
 		firstName: '',
-		lastName: '',
 		email: '',
 		contactNumber: '',
+		message: '',
 	});
-
 	const [submitted, setSubmitted] = useState(false);
 
-	// Handle input change
 	const handleChange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
 
-	// Handle form submission
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		console.log('Submitted Data:', formData);
-		setSubmitted(true);
+		try {
+			const res = await fetch('/api/contact', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(formData),
+			});
+	
+			if (res.ok) {
+				setSubmitted(true);
+			} else {
+				alert('Something went wrong!');
+			}
+		} catch (err) {
+			console.error(err);
+		}
 	};
+	
+
+	const inputClasses =
+		'block w-full border-none outline-none my-4 px-4 py-5 rounded-[11px] bg-[#1f2937] shadow-[0_4px_6px_-1px_#18c5c5,0_2px_4px_-2px_#18c5c5] text-white placeholder:text-gray-400';
 
 	return (
-		<div className="max-w-md mx-auto p-6 bg-white shadow-md rounded-lg mt-10">
-			<h2 className="text-2xl font-bold text-center text-[#18c5c5]">Contact Us</h2>
-
+		<div className="w-full max-w-[700px] mx-auto p-6 rounded-lg mt-10">
 			{submitted ? (
-				<p className="text-green-600 text-center mt-4">Thank you! We will contact you soon.</p>
+				<p className="text-green-500 text-center text-lg font-medium">
+					Thank you! We will contact you soon.
+				</p>
 			) : (
-				<form onSubmit={handleSubmit} className="mt-6">
-					<div className="mb-4">
-						<label className="block text-gray-700">First Name</label>
-						<input
-							type="text"
-							name="firstName"
-							value={formData.firstName}
-							onChange={handleChange}
-							className="w-full px-3 py-2 border rounded-lg"
-							required
-						/>
-					</div>
+				<form onSubmit={handleSubmit}>
+					<h2 className="text-3xl font-bold text-center text-[#18c5c5] mb-6">Contact Us</h2>
 
-					<div className="mb-4">
-						<label className="block text-gray-700">Last Name</label>
-						<input
-							type="text"
-							name="lastName"
-							value={formData.lastName}
-							onChange={handleChange}
-							className="w-full px-3 py-2 border rounded-lg"
-							required
-						/>
-					</div>
+					<input
+						type="text"
+						name="firstName"
+						value={formData.firstName}
+						onChange={handleChange}
+						className={inputClasses}
+						required
+						placeholder="Enter Your Full Name"
+					/>
 
-					<div className="mb-4">
-						<label className="block text-gray-700">Email</label>
-						<input
-							type="email"
-							name="email"
-							value={formData.email}
-							onChange={handleChange}
-							className="w-full px-3 py-2 border rounded-lg"
-							required
-						/>
-					</div>
+					<input
+						type="email"
+						name="email"
+						value={formData.email}
+						onChange={handleChange}
+						className={inputClasses}
+						required
+						placeholder="Enter Your Email"
+					/>
 
-					<div className="mb-4">
-						<label className="block text-gray-700">Contact Number</label>
-						<input
-							type="tel"
-							name="contactNumber"
-							value={formData.contactNumber}
-							onChange={handleChange}
-							className="w-full px-3 py-2 border rounded-lg"
-							required
-						/>
-					</div>
+					<input
+						type="tel"
+						name="contactNumber"
+						value={formData.contactNumber}
+						onChange={handleChange}
+						className={inputClasses}
+						required
+						placeholder="Enter Your Mobile Number"
+					/>
+
+					<textarea
+						name="message"
+						value={formData.message}
+						onChange={handleChange}
+						className={`${inputClasses} resize-none h-20`}
+						required
+						placeholder="Write your message here..."
+					/>
 
 					<button
 						type="submit"
-						className="w-full bg-[#18c5c5] text-white py-2 rounded-lg hover:bg-[#15a3a3]"
+						className="bg-[#18c5c5] text-white py-3 px-6 rounded-lg hover:bg-[#15a3a3] w-full mt-4"
 					>
 						Submit
 					</button>

@@ -1,0 +1,42 @@
+[
+  {
+    "num": "01",
+    "category": "Frontend",
+    "title": "Project 1",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, odit?",
+    "stack": ["react js"],
+    "image": "/image/project1.jpg",
+    "live": "https://Krutikumbhani.github.io/bmicalculater",
+    "github": ""
+  },
+  {
+    "num": "02",
+    "category": "Front-end and Back-end",
+    "title": "Project 2",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, odit?",
+    "stack": ["HTML 5", "CSS 3", "JavaScript"],
+    "image": "/assets/work/thumb1.png",
+    "live": "",
+    "github": ""
+  },
+  {
+    "num": "03",
+    "category": "Full-Stack",
+    "title": "Project 3",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, odit?",
+    "stack": ["Next.js", "Tailwind.css", "Node.js"],
+    "image": "/assets/work/thumb1.png",
+    "live": "",
+    "github": ""
+  },
+  {
+    "num": "04",
+    "category": "MERN-Stack",
+    "title": "Project 4",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, odit?",
+    "stack": ["Next.js", "Tailwind.css", "Node.js"],
+    "image": "/assets/work/thumb1.png",
+    "live": "",
+    "github": ""
+  }
+]

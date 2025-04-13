@@ -71,11 +71,10 @@ export default function WorkPage() {
             {projects.map((proj, idx) => (
               <div
                 key={idx}
-                className={`w-[100px] h-[100px] relative rounded-full overflow-hidden border-4 transition-all duration-500 ${
-                  idx === currentIndex
-                    ? 'border-[#18c5c5] animate-pulse shadow-[0_0_15px_#18c5c5]'
-                    : 'border-[#18c5c5]/30'
-                }`}
+                className={`w-[100px] h-[100px] relative rounded-full overflow-hidden border-4 transition-all duration-500 ${idx === currentIndex
+                  ? 'border-[#18c5c5] animate-pulse shadow-[0_0_15px_#18c5c5]'
+                  : 'border-[#18c5c5]/30'
+                  }`}
               >
                 <div className="absolute inset-2">
                   <Image

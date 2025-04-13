@@ -27,7 +27,7 @@ export default function Resume() {
       });
   }, []);
 
-  if (!resumeData) return <div className="text-center py-10">Loading...</div>;
+  if (!resumeData) return <div className="text-[#18c5c5] text-5xl flex justify-center items-center">Loading...</div>;
 
   const { about, experience, education, skills } = resumeData;
 
@@ -38,41 +38,37 @@ export default function Resume() {
         <div className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 text-center xl:text-left">
           <button
             onClick={() => setActiveTab('experience')}
-            className={`py-2 px-4 rounded ${
-              activeTab === 'experience'
-                ? 'bg-[#18c5c5] text-white'
-                : 'bg-[#232329] text-white'
-            }`}
+            className={`py-2 px-4 rounded ${activeTab === 'experience'
+              ? 'bg-[#18c5c5] text-white'
+              : 'bg-[#232329] text-white'
+              }`}
           >
             Experience
           </button>
           <button
             onClick={() => setActiveTab('education')}
-            className={`py-2 px-4 rounded ${
-              activeTab === 'education'
-                ? 'bg-[#18c5c5] text-white'
-                : 'bg-[#232329] text-white'
-            }`}
+            className={`py-2 px-4 rounded ${activeTab === 'education'
+              ? 'bg-[#18c5c5] text-white'
+              : 'bg-[#232329] text-white'
+              }`}
           >
             Education
           </button>
           <button
             onClick={() => setActiveTab('skills')}
-            className={`py-2 px-4 rounded ${
-              activeTab === 'skills'
-                ? 'bg-[#18c5c5] text-white'
-                : 'bg-[#232329] text-white'
-            }`}
+            className={`py-2 px-4 rounded ${activeTab === 'skills'
+              ? 'bg-[#18c5c5] text-white'
+              : 'bg-[#232329] text-white'
+              }`}
           >
             Skills
           </button>
           <button
             onClick={() => setActiveTab('about')}
-            className={`py-2 px-4 rounded ${
-              activeTab === 'about'
-                ? 'bg-[#18c5c5] text-white'
-                : 'bg-[#232329] text-white'
-            }`}
+            className={`py-2 px-4 rounded ${activeTab === 'about'
+              ? 'bg-[#18c5c5] text-white'
+              : 'bg-[#232329] text-white'
+              }`}
           >
             About me
           </button>

@@ -43,12 +43,12 @@ export async function GET() {
         {
           Institute: "Sarswati vidhya sankul",
           Degree: "HSC",
-          duration: "2023 - 2024",
+          duration: "2013 - 2014",
         },
         {
           Institute: "S.V.S morden sankul",
-          Degree: "HSC",
-          duration: "2023 - 2024",
+          Degree: "SSC",
+          duration: "2011 - 2012",
         },
       ],
     },

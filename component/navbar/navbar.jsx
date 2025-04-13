@@ -28,7 +28,7 @@ export default function NavBar() {
               <Link href='/' className="font-bold text-3xl text-[#18c5c5]">Kruti</Link>
               <div>
                 {loading ? (
-                  <p>Loading...</p>
+                  <p className='text-[#18c5c5] text-xl flex justify-center items-center'>Loading...</p>
                 ) : (
                   <ul className="flex">
                     {data.map((item) => {

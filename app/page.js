@@ -21,8 +21,8 @@ function HomePage({ id, title }, ref) {
   return (
     <div className='flex items-center py-[45px] mb-[45px]'>
       <div className="container mx-auto">
-        <div className='w-full flex justify-between items-center'>
-          <div className='w-1/2 text-center'>
+        <div className='w-full flex lg:flex-row flex-col gap-[60px]  justify-between items-center'>
+          <div className='lg:w-1/2 w-full text-center order-2 lg:order-1'>
             <div>
               <div className="overflow-hidden relative h-[65px] pt-[10px] -mt-[10px] mb-[50px]">
                 <ul className="flip5">
@@ -80,7 +80,7 @@ function HomePage({ id, title }, ref) {
             </div>
           </div>
 
-          <div className='w-1/2 photo'>
+          <div className='lg:w-1/2 w-full photo order-1 lg:order-2'>
             <div className='w-[350px] mx-auto rounded-full overflow-hidden shadow-[0_0_50px_#18c5c5] square-to-circle'>
               <img src="/image/002.jpg" alt="Kruti Kumbhani" />
             </div>

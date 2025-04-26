@@ -82,7 +82,7 @@ function HomePage({ id, title }, ref) {
 
           <div className='w-1/2 photo'>
             <div className='w-[350px] mx-auto rounded-full overflow-hidden shadow-[0_0_50px_#18c5c5] square-to-circle'>
-              {/* <img src="/image/002.jpg" alt="Kruti Kumbhani" />  */}
+              <img src="/image/002.jpg" alt="Kruti Kumbhani" />
             </div>
           </div>
         </div>

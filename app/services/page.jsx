@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 
-export default function Services  ()  {
+export default function Services() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
@@ -13,9 +13,13 @@ export default function Services  ()  {
       .then((data) => setServices(data));
   }, []);
 
+  if (!services) return <div className="text-[#18c5c5] text-5xl flex justify-center items-center">Loading...</div>;
   return (
     <section className=" flex flex-col justify-center py-12 xl:py-0">
-      <div className="container mx-auto">
+      <div className="container mx-auto py-12 px-3">
+        <div className="font-bold text-[#18c5c5] mb-[50px] flex justify-center">
+          <h1 className="text-4xl capitalize text-[#18c5c5]">Services</h1>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
           {services.map((service, index) => (
             <div

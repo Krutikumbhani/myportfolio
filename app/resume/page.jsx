@@ -32,7 +32,7 @@ export default function Resume() {
   const { about, experience, education, skills } = resumeData;
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-12">
       <div className="flex flex-col xl:flex-row gap-[60px]">
         {/* Tabs */}
         <div className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6 text-center xl:text-left">

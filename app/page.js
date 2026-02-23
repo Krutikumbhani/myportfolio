@@ -19,7 +19,7 @@ function HomePage({ id, title }, ref) {
   };
 
   return (
-    <div className='flex items-center py-[45px] mb-[45px]'>
+    <div className='flex items-center py-[5px] mb-[45px]'>
       <div className="container mx-auto">
         <div className='w-full flex lg:flex-row flex-col gap-[60px]  justify-between items-center'>
           <div className='lg:w-1/2 w-full text-center order-2 lg:order-1'>

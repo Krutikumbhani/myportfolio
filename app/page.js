@@ -82,7 +82,7 @@ function HomePage({ id, title }, ref) {
 
           <div className='lg:w-1/2 w-full photo order-1 lg:order-2'>
             <div className='w-[350px] mx-auto rounded-full overflow-hidden shadow-[0_0_50px_#18c5c5] square-to-circle'>
-              <img src="/image/kruti-kumbhani.jpeg" alt="Kruti Kumbhani" />
+              <img src="/image/002.jpeg" alt="Kruti Kumbhani" />
             </div>
           </div>
         </div>

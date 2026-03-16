@@ -13,14 +13,50 @@
   },
   {
     "num": "03",
-    "title": "Logo Design",
-    "description": "Crafting unique and memorable brand logos.",
+    "title": "Digital Marketing",
+    "description": "Grow Your Brand Using Digital Marketing",
     "href": ""
   },
   {
     "num": "04",
     "title": "SEO",
     "description": "Optimizing websites to rank on search engines.",
+    "href": ""
+  },
+  {
+    "num": "05",
+    "title": "Content Writer",
+    "description": "Creative content writer skilled in SEO friendly articles, blog writing, and engaging website content to help businesses grow online.",
+    "href": ""
+  },
+  {
+    "num": "06",
+    "title": "Website Content Writing",
+    "description": "Creating clear and professional website content for home pages, about pages, and service pages to present businesses effectively online.",
+    "href": ""
+  },
+  {
+    "num": "07",
+    "title": "YouTube Script Writing",
+    "description": "Writing engaging and structured scripts for YouTube videos that keep viewers interested and deliver messages clearly.",
+    "href": ""
+  },
+  {
+    "num": "08",
+    "title": "Keyword Research",
+    "description": "Finding high-value and relevant keywords to help websites rank better in search engines and reach the right audience.",
+    "href": ""
+  },
+  {
+    "num": "09",
+    "title": "Keyword Research",
+    "description": "Optimizing website pages using proper headings, meta titles, meta descriptions, and keywords to improve search engine rankings.",
+    "href": ""
+  },
+  {
+    "num": "10",
+    "title": "Landing Page Design",
+    "description": "Designing attractive and conversion-focused landing pages to promote products, services, and marketing campaigns effectively.",
     "href": ""
   }
 ]

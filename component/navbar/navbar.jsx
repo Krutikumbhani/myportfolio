@@ -27,7 +27,7 @@ export default function NavBar() {
 
   return (
     <header>
-      <div className='mb-[50px]'>
+      <div className='mb-[80px]'>
         <div className="bg-black p-5 shadow-lg drop-shadow-[0_5px_10px_#18c5c5]">
           <div className="container mx-auto flex justify-between items-center">
             {/* Logo */}
